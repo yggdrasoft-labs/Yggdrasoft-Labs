@@ -76,9 +76,58 @@ export const scaleIn = {
   },
 };
 
+// Spacing System
+export const spacing = {
+  section: {
+    vertical: '6rem',
+    horizontal: '2rem',
+  },
+  card: '2rem',
+  element: '1.5rem',
+  micro: '0.5rem',
+};
+
 // Shadow and Glow Effects
 export const shadows = {
   goldGlow: '0 0 20px rgba(140, 114, 49, 0.3), 0 0 40px rgba(140, 114, 49, 0.2)',
   tealGlow: '0 0 20px rgba(54, 82, 101, 0.4), 0 0 40px rgba(54, 82, 101, 0.2)',
   cardElevation: '0 4px 6px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.2)',
+};
+
+// Additional Animation Variants
+export const fadeIn = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { duration: 0.6, ease: 'easeOut' },
+  },
+};
+
+export const slideInLeft = {
+  hidden: { opacity: 0, x: -60 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 0.6, ease: 'easeOut' },
+  },
+};
+
+export const slideInRight = {
+  hidden: { opacity: 0, x: 60 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 0.6, ease: 'easeOut' },
+  },
+};
+
+export const floatingAnimation = {
+  animate: {
+    y: [0, -10, 0],
+    transition: {
+      duration: 3,
+      repeat: Infinity,
+      ease: 'easeInOut',
+    },
+  },
 };
