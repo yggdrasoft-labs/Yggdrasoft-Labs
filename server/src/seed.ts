@@ -157,7 +157,8 @@ const settings = {
   },
 };
 
-const reviews = [
+// General reviews (not project-specific)
+const generalReviews = [
   {
     name: 'Sarah Johnson',
     role: 'CTO',
@@ -197,6 +198,219 @@ const reviews = [
     avatar: '',
     isActive: true,
     order: 4,
+  },
+];
+
+// Project-specific reviews
+const projectReviews = [
+  // AI-Powered Analytics Platform reviews
+  {
+    name: 'Jennifer Martinez',
+    role: 'Data Science Lead',
+    company: 'DataCorp Solutions',
+    rating: 5,
+    review: 'The AI analytics platform exceeded our expectations. The predictive models are incredibly accurate, and the dashboard interface makes complex data accessible to our entire team.',
+    avatar: '',
+    isActive: true,
+    order: 1,
+    projectTitle: 'AI-Powered Analytics Platform',
+  },
+  {
+    name: 'Robert Kim',
+    role: 'VP of Operations',
+    company: 'Global Insights Inc',
+    rating: 5,
+    review: 'Implementation was seamless, and the ROI was evident within the first quarter. The real-time insights have transformed our decision-making process.',
+    avatar: '',
+    isActive: true,
+    order: 2,
+    projectTitle: 'AI-Powered Analytics Platform',
+  },
+  {
+    name: 'Amanda Foster',
+    role: 'Business Analyst',
+    company: 'TechVentures Inc',
+    rating: 4,
+    review: 'Powerful analytics capabilities with an intuitive interface. The machine learning models have helped us identify trends we would have missed otherwise.',
+    avatar: '',
+    isActive: true,
+    order: 3,
+    projectTitle: 'AI-Powered Analytics Platform',
+  },
+  
+  // Smart Farm Management System reviews
+  {
+    name: 'Carlos Rodriguez',
+    role: 'Agricultural Manager',
+    company: 'Sunrise Farms',
+    rating: 5,
+    review: 'This system has completely transformed our farming operations. The IoT sensors provide real-time data that helps us optimize irrigation and reduce water waste by 35%.',
+    avatar: '',
+    isActive: true,
+    order: 1,
+    projectTitle: 'Smart Farm Management System',
+  },
+  {
+    name: 'Lisa Wang',
+    role: 'Farm Operations Director',
+    company: 'Green Valley Farms',
+    rating: 5,
+    review: 'The predictive analytics for crop health have been a game-changer. We can now address issues before they become problems, resulting in higher yields and better quality produce.',
+    avatar: '',
+    isActive: true,
+    order: 2,
+    projectTitle: 'Smart Farm Management System',
+  },
+  {
+    name: 'James Patterson',
+    role: 'Sustainability Coordinator',
+    company: 'EcoFarm Collective',
+    rating: 5,
+    review: 'Not only has this improved our efficiency, but it has also helped us meet our sustainability goals. The resource optimization features are outstanding.',
+    avatar: '',
+    isActive: true,
+    order: 3,
+    projectTitle: 'Smart Farm Management System',
+  },
+  
+  // Blockchain Trading Platform reviews
+  {
+    name: 'Alexander Petrov',
+    role: 'Chief Trading Officer',
+    company: 'Quantum Capital',
+    rating: 5,
+    review: 'The security and transparency of this blockchain platform are unparalleled. Smart contracts execute flawlessly, and the audit trail gives us complete confidence.',
+    avatar: '',
+    isActive: true,
+    order: 1,
+    projectTitle: 'Blockchain Trading Platform',
+  },
+  {
+    name: 'Sophia Chen',
+    role: 'Portfolio Manager',
+    company: 'Capital Growth Partners',
+    rating: 5,
+    review: 'The automated trading bots have significantly improved our trading efficiency. The platform handles high-frequency trading with zero downtime.',
+    avatar: '',
+    isActive: true,
+    order: 2,
+    projectTitle: 'Blockchain Trading Platform',
+  },
+  {
+    name: 'Marcus Johnson',
+    role: 'Risk Analyst',
+    company: 'SecureInvest Group',
+    rating: 4,
+    review: 'Excellent risk management tools and real-time analytics. The platform has helped us minimize exposure while maximizing returns.',
+    avatar: '',
+    isActive: true,
+    order: 3,
+    projectTitle: 'Blockchain Trading Platform',
+  },
+  
+  // Telemedicine Platform reviews
+  {
+    name: 'Dr. Rachel Green',
+    role: 'Chief Medical Officer',
+    company: 'HealthFirst Clinic',
+    rating: 5,
+    review: 'This platform has revolutionized how we deliver care. Video consultations are crystal clear, and the integrated health records make patient care seamless.',
+    avatar: '',
+    isActive: true,
+    order: 1,
+    projectTitle: 'Telemedicine Platform',
+  },
+  {
+    name: 'Dr. Michael Torres',
+    role: 'Telemedicine Director',
+    company: 'CareConnect Health',
+    rating: 5,
+    review: 'Patient satisfaction has increased by 45% since implementing this platform. The appointment scheduling and prescription management features are excellent.',
+    avatar: '',
+    isActive: true,
+    order: 2,
+    projectTitle: 'Telemedicine Platform',
+  },
+  {
+    name: 'Nurse Sarah Williams',
+    role: 'Head Nurse',
+    company: 'Virtual Care Solutions',
+    rating: 5,
+    review: 'Easy to use for both staff and patients. The integration with medical devices allows us to monitor patients remotely with confidence.',
+    avatar: '',
+    isActive: true,
+    order: 3,
+    projectTitle: 'Telemedicine Platform',
+  },
+  
+  // E-Learning Management System reviews
+  {
+    name: 'Professor David Lee',
+    role: 'Dean of Online Education',
+    company: 'Global University',
+    rating: 5,
+    review: 'The most comprehensive e-learning platform we\'ve used. The AI-powered personalized learning paths have improved student outcomes significantly.',
+    avatar: '',
+    isActive: true,
+    order: 1,
+    projectTitle: 'E-Learning Management System',
+  },
+  {
+    name: 'Emma Thompson',
+    role: 'Education Technology Specialist',
+    company: 'LearnTech Academy',
+    rating: 5,
+    review: 'Course creation tools are intuitive, and the analytics help us understand student engagement. The live class feature works flawlessly even with 500+ participants.',
+    avatar: '',
+    isActive: true,
+    order: 2,
+    projectTitle: 'E-Learning Management System',
+  },
+  {
+    name: 'Dr. Kevin Brown',
+    role: 'Curriculum Director',
+    company: 'Future Skills Institute',
+    rating: 4,
+    review: 'Excellent platform with robust features. The assessment tools and progress tracking have made it easier to ensure learning objectives are met.',
+    avatar: '',
+    isActive: true,
+    order: 3,
+    projectTitle: 'E-Learning Management System',
+  },
+  
+  // Job Matching AI Engine reviews
+  {
+    name: 'Rebecca Martinez',
+    role: 'HR Director',
+    company: 'TalentFirst Corp',
+    rating: 5,
+    review: 'This AI engine has reduced our time-to-hire by 60%. The skill matching is incredibly accurate, and candidates are much better aligned with our needs.',
+    avatar: '',
+    isActive: true,
+    order: 1,
+    projectTitle: 'Job Matching AI Engine',
+  },
+  {
+    name: 'Thomas Anderson',
+    role: 'Recruitment Manager',
+    company: 'CareerPath Solutions',
+    rating: 5,
+    review: 'The resume parsing and skill gap analysis features are outstanding. We\'ve seen a 40% improvement in candidate quality since implementation.',
+    avatar: '',
+    isActive: true,
+    order: 2,
+    projectTitle: 'Job Matching AI Engine',
+  },
+  {
+    name: 'Linda Chen',
+    role: 'Talent Acquisition Lead',
+    company: 'NextGen Careers',
+    rating: 5,
+    review: 'Personalized job recommendations have increased candidate engagement dramatically. The platform understands nuances that traditional systems miss.',
+    avatar: '',
+    isActive: true,
+    order: 3,
+    projectTitle: 'Job Matching AI Engine',
   },
 ];
 
@@ -269,16 +483,35 @@ const seedDatabase = async () => {
     console.log('✅ Seeded domains');
 
     // Insert projects
-    await Project.insertMany(projects);
+    const createdProjects = await Project.insertMany(projects);
     console.log('✅ Seeded projects');
 
     // Insert settings
     await Settings.create(settings);
     console.log('✅ Seeded settings');
 
-    // Insert reviews
-    await Review.insertMany(reviews);
-    console.log('✅ Seeded reviews');
+    // Insert general reviews
+    await Review.insertMany(generalReviews);
+    console.log('✅ Seeded general reviews');
+
+    // Insert project-specific reviews and link them to projects
+    for (const reviewData of projectReviews) {
+      const { projectTitle, ...reviewFields } = reviewData;
+      const project = createdProjects.find(p => p.title === projectTitle);
+      
+      if (project) {
+        const review = await Review.create({
+          ...reviewFields,
+          projectId: project._id,
+        });
+        
+        // Add review to project's reviews array
+        await Project.findByIdAndUpdate(project._id, {
+          $push: { reviews: review._id },
+        });
+      }
+    }
+    console.log('✅ Seeded project reviews and linked to projects');
 
     // Insert blogs
     await Blog.insertMany(blogs);
