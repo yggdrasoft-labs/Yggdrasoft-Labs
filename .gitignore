@@ -60,3 +60,4 @@ Thumbs.db
 # yarn.lock
 # pnpm-lock.yaml
 DEPLOYMENT.md
+server/src/seed.ts

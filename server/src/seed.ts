@@ -152,8 +152,8 @@ const settings = {
   contactEmail: 'contact@yggrasoft.com',
   socialMedia: {
     twitter: 'https://twitter.com/yggrasoftlabs',
-    linkedin: 'https://linkedin.com/company/yggrasoft-labs',
-    github: 'https://github.com/yggrasoft-labs',
+    linkedin: 'https://linkedin.com/in/shanid-sajjatuz-islam',
+    github: 'https://github.com/perashanid',
   },
 };
 

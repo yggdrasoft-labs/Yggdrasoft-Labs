@@ -36,7 +36,7 @@ export const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-gray-400">
                 <FaEnvelope className="text-gold" />
-                <span className="text-sm">contact@yggrasoft.com</span>
+                <span className="text-sm">shanidsajjatuz@gmail.com</span>
               </div>
               <div className="flex items-center gap-3 text-gray-400">
                 <FaMapMarkerAlt className="text-gold" />
@@ -147,7 +147,7 @@ export const Footer = () => {
                 <FaTwitter className="text-lg" />
               </a>
               <a
-                href="https://linkedin.com/company/yggrasoft-labs"
+                href="https://linkedin.com/in/shanid-sajjatuz-islam"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center text-gold hover:bg-gold hover:text-white transition-all"
@@ -156,7 +156,7 @@ export const Footer = () => {
                 <FaLinkedin className="text-lg" />
               </a>
               <a
-                href="https://github.com/yggrasoft-labs"
+                href="https://github.com/perashanid"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center text-gold hover:bg-gold hover:text-white transition-all"
