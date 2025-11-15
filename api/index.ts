@@ -34,8 +34,18 @@ async function connectToDatabase() {
 
 const app: Application = express();
 
-// Security middleware
-app.use(helmet());
+// Security middleware with custom CSP to allow external images
+app.use(helmet({
+  contentSecurityPolicy: {
+    directives: {
+      defaultSrc: ["'self'"],
+      imgSrc: ["'self'", "data:", "https:", "http:"],
+      styleSrc: ["'self'", "'unsafe-inline'", "https:"],
+      scriptSrc: ["'self'"],
+      connectSrc: ["'self'"],
+    },
+  },
+}));
 
 // CORS configuration
 app.use(cors({
