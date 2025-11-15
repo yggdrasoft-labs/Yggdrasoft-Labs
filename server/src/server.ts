@@ -38,8 +38,13 @@ app.use('/api/', apiLimiter);
 // Import routes
 import contactRoutes from './routes/contactRoutes';
 import domainRoutes from './routes/domainRoutes';
+import projectRoutes from './routes/projectRoutes';
 import newsletterRoutes from './routes/newsletterRoutes';
 import settingsRoutes from './routes/settingsRoutes';
+import authRoutes from './routes/authRoutes';
+import reviewRoutes from './routes/reviewRoutes';
+import blogRoutes from './routes/blogRoutes';
+import analyticsRoutes from './routes/analyticsRoutes';
 
 // Health check route
 app.get('/api/health', (_req: Request, res: Response) => {
@@ -49,8 +54,13 @@ app.get('/api/health', (_req: Request, res: Response) => {
 // API routes
 app.use('/api/contacts', contactRoutes);
 app.use('/api/domains', domainRoutes);
+app.use('/api/projects', projectRoutes);
 app.use('/api/newsletter', newsletterRoutes);
 app.use('/api/settings', settingsRoutes);
+app.use('/api/auth', authRoutes);
+app.use('/api/reviews', reviewRoutes);
+app.use('/api/blogs', blogRoutes);
+app.use('/api/analytics', analyticsRoutes);
 
 // 404 handler - must be after all routes
 app.use(notFoundHandler);

@@ -50,10 +50,10 @@ export const Navbar = () => {
   return (
     <>
       <motion.nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ease-in-out ${
           isScrolled
             ? 'bg-background-secondary/95 backdrop-blur-md shadow-lg border-b border-gold/20'
-            : 'bg-gradient-to-b from-black/60 to-transparent'
+            : 'bg-gradient-to-b from-black/80 via-black/40 to-transparent backdrop-blur-sm'
         }`}
         initial={{ y: -100 }}
         animate={{ y: 0 }}
@@ -67,9 +67,8 @@ export const Navbar = () => {
                 e.preventDefault();
                 scrollToSection('#hero');
               }}
-              className="flex items-center gap-3 text-2xl font-bold text-gold hover:text-gold-light transition-colors font-heading"
+              className="text-2xl font-bold text-gold hover:text-gold-light transition-colors font-heading"
             >
-              <img src="/assets/favicon.png" alt="Yggrasoft Labs" className="w-8 h-8" />
               Yggrasoft Labs
             </a>
 

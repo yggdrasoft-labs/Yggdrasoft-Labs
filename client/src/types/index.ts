@@ -20,6 +20,23 @@ export interface Domain {
   updatedAt: string;
 }
 
+// Project Types
+export interface Project {
+  _id: string;
+  title: string;
+  description: string;
+  technologies: string[];
+  imageUrl?: string;
+  githubUrl?: string;
+  liveUrl?: string;
+  featured?: boolean;
+  domainId?: string;
+  order?: number;
+  isActive?: boolean;
+  createdAt?: string;
+  updatedAt?: string;
+}
+
 // Contact Types
 export interface ContactFormData {
   name: string;

@@ -69,8 +69,17 @@ export const AboutSection = () => {
             >
               <div className="absolute inset-0 bg-gradient-to-br from-gold/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
               <div className="relative z-10">
-                <div className="w-16 h-16 mb-4 rounded-full bg-gold/10 flex items-center justify-center">
-                  <span className="text-3xl">🌱</span>
+                <div className="w-16 h-16 mb-4 rounded-full bg-gold/10 flex items-center justify-center group-hover:bg-gold/20 transition-colors">
+                  <svg className="w-10 h-10 text-gold" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M32 8L32 32M32 32L32 56M32 32L16 20M32 32L48 20M32 32L16 44M32 32L48 44" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+                    <circle cx="32" cy="8" r="3" fill="currentColor"/>
+                    <circle cx="16" cy="20" r="2.5" fill="currentColor"/>
+                    <circle cx="48" cy="20" r="2.5" fill="currentColor"/>
+                    <circle cx="16" cy="44" r="2.5" fill="currentColor"/>
+                    <circle cx="48" cy="44" r="2.5" fill="currentColor"/>
+                    <circle cx="32" cy="56" r="3" fill="currentColor"/>
+                    <path d="M32 8C32 8 28 12 28 16C28 18 29.5 20 32 20C34.5 20 36 18 36 16C36 12 32 8 32 8Z" fill="currentColor" opacity="0.3"/>
+                  </svg>
                 </div>
                 <h3 className="text-2xl font-bold text-gold mb-3 font-heading">Develop</h3>
                 <p className="text-gray-300 leading-relaxed">
@@ -85,8 +94,15 @@ export const AboutSection = () => {
             >
               <div className="absolute inset-0 bg-gradient-to-br from-teal/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
               <div className="relative z-10">
-                <div className="w-16 h-16 mb-4 rounded-full bg-teal/10 flex items-center justify-center">
-                  <span className="text-3xl">💎</span>
+                <div className="w-16 h-16 mb-4 rounded-full bg-teal/10 flex items-center justify-center group-hover:bg-teal/20 transition-colors">
+                  <svg className="w-10 h-10 text-teal" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M32 8L44 20L32 32L20 20L32 8Z" fill="currentColor" opacity="0.3"/>
+                    <path d="M32 32L44 44L32 56L20 44L32 32Z" fill="currentColor" opacity="0.5"/>
+                    <path d="M32 8L44 20M44 20L32 32M32 32L20 20M20 20L32 8M32 32L44 44M44 44L32 56M32 56L20 44M20 44L32 32" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    <circle cx="32" cy="20" r="2" fill="currentColor"/>
+                    <circle cx="32" cy="44" r="2" fill="currentColor"/>
+                    <path d="M28 20L32 28L36 20" stroke="currentColor" strokeWidth="1.5" opacity="0.6"/>
+                  </svg>
                 </div>
                 <h3 className="text-2xl font-bold text-teal mb-3 font-heading">Fund</h3>
                 <p className="text-gray-300 leading-relaxed">
@@ -101,8 +117,16 @@ export const AboutSection = () => {
             >
               <div className="absolute inset-0 bg-gradient-to-br from-gold/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
               <div className="relative z-10">
-                <div className="w-16 h-16 mb-4 rounded-full bg-gold/10 flex items-center justify-center">
-                  <span className="text-3xl">🚀</span>
+                <div className="w-16 h-16 mb-4 rounded-full bg-gold/10 flex items-center justify-center group-hover:bg-gold/20 transition-colors">
+                  <svg className="w-10 h-10 text-gold" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M32 8L32 40" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+                    <path d="M32 40L44 28M32 40L20 28" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+                    <circle cx="32" cy="8" r="4" fill="currentColor"/>
+                    <path d="M20 48C20 48 24 44 32 44C40 44 44 48 44 48" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" opacity="0.6"/>
+                    <path d="M16 54C16 54 22 50 32 50C42 50 48 54 48 54" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" opacity="0.4"/>
+                    <path d="M28 16L32 8L36 16" fill="currentColor" opacity="0.3"/>
+                    <circle cx="32" cy="40" r="2.5" fill="currentColor"/>
+                  </svg>
                 </div>
                 <h3 className="text-2xl font-bold text-gold mb-3 font-heading">Deploy</h3>
                 <p className="text-gray-300 leading-relaxed">

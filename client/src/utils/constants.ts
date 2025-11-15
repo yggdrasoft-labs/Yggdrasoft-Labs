@@ -6,6 +6,7 @@ export const NAV_ITEMS = [
   { id: 'hero', label: 'Home', href: '#hero' },
   { id: 'about', label: 'About', href: '#about' },
   { id: 'domains', label: 'Domains', href: '#domains' },
+  { id: 'projects', label: 'Projects', href: '#projects' },
   { id: 'contact', label: 'Contact', href: '#contact' },
 ];
 

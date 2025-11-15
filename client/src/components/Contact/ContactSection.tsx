@@ -157,7 +157,7 @@ export const ContactSection = () => {
             </motion.div>
 
             <motion.div variants={fadeInUp} className="space-y-6">
-              <div className="bg-gradient-to-br from-background-secondary to-background-secondary/80 px-8 pt-2 pb-8 rounded-xl border-2 border-gold/30 hover:border-gold transition-all mystical-glow">
+              <div className="bg-gradient-to-br from-background-secondary to-background-secondary/80 p-8 rounded-xl border-2 border-gold/30 hover:border-gold transition-all mystical-glow">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center flex-shrink-0">
                     <FaEnvelope className="text-gold text-xl" />

@@ -1,26 +1,7 @@
-import { useState } from 'react';
 import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
-import { subscribeNewsletter } from '../../services/api';
 import { motion } from 'framer-motion';
 
 export const Footer = () => {
-  const [email, setEmail] = useState('');
-  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
-
-  const handleSubscribe = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setStatus('loading');
-
-    try {
-      await subscribeNewsletter({ email });
-      setStatus('success');
-      setEmail('');
-      setTimeout(() => setStatus('idle'), 3000);
-    } catch (error) {
-      setStatus('error');
-      setTimeout(() => setStatus('idle'), 3000);
-    }
-  };
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -30,14 +11,14 @@ export const Footer = () => {
   };
 
   return (
-    <footer className="relative bg-gradient-to-b from-[#0f1419] to-[#0a0e1a] border-t-2 border-gold/30 overflow-hidden">
+    <footer className="relative bg-gradient-to-b from-background-primary/80 via-background-primary/60 to-background-primary/90 border-t-2 border-gold/30 overflow-hidden backdrop-blur-sm">
       {/* Mystical background effects */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(140,114,49,0.05),transparent_50%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(54,82,101,0.05),transparent_50%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(140,114,49,0.08),transparent_50%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(54,82,101,0.08),transparent_50%)]" />
 
       <div className="container mx-auto px-6 relative z-10">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 py-16">
           {/* Company Info */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -144,42 +125,18 @@ export const Footer = () => {
             </ul>
           </motion.div>
 
-          {/* Newsletter */}
+          {/* Social Links */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            <h4 className="text-xl font-semibold text-gold mb-6 font-heading">Stay Connected</h4>
-            <p className="text-gray-300 text-sm mb-4">
-              Subscribe to receive updates on our latest innovations and projects.
+            <h4 className="text-xl font-semibold text-gold mb-6 font-heading">Connect With Us</h4>
+            <p className="text-gray-300 text-sm mb-6">
+              Follow us on social media to stay updated with our latest innovations.
             </p>
-            <form onSubmit={handleSubscribe} className="space-y-3">
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Enter your email"
-                required
-                className="w-full px-4 py-3 bg-background-secondary border-2 border-gold/30 rounded focus:border-gold focus:outline-none text-text-primary transition-colors"
-              />
-              <button
-                type="submit"
-                disabled={status === 'loading'}
-                className="w-full px-4 py-3 bg-gradient-to-r from-teal to-teal-light text-white rounded font-semibold hover:shadow-lg hover:shadow-teal/30 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
-              >
-                {status === 'loading' ? 'Subscribing...' : 'Subscribe'}
-              </button>
-              {status === 'success' && (
-                <p className="text-teal text-sm">✓ Successfully subscribed!</p>
-              )}
-              {status === 'error' && (
-                <p className="text-red-400 text-sm">✗ Subscription failed. Try again.</p>
-              )}
-            </form>
-
-            <div className="flex gap-4 mt-6">
+            <div className="flex gap-4">
               <a
                 href="https://twitter.com/yggrasoftlabs"
                 target="_blank"
